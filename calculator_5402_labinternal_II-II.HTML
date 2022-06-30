@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function sum(){
+			var x = Number(document.getElementById("txt1").value);
+			var y = Number(document.getElementById("txt2").value);
+			document.getElementById("txt3").value = x+y;
+		}
+		function product(){
+			var x = Number(document.getElementById("txt1").value);
+			var y = Number(document.getElementById("txt2").value);
+			document.getElementById("txt3").value = x*y;
+		}
+		function difference(){
+			var x = Number(document.getElementById("txt1").value);
+			var y = Number(document.getElementById("txt2").value);
+			document.getElementById("txt3").value = x-y;
+		}
+		function quotient(){
+			var x = Number(document.getElementById("txt1").value);
+			var y = Number(document.getElementById("txt2").value);
+			document.getElementById("txt3").value = x/y;
+		}
+		
+	</script>
+</head>
+<body>
+	<label for = "txt1">NUM1</label>
+	<input type = "text" id  = "txt1" name = "txt1"><br><br>
+	<label for = "txt1">NUM2</label>
+	<input type = "text" id  = "txt2" name = "txt2"><br><br>
+	<label for = "txt1">ANS </label>
+	<input type = "text" id  = "txt3" name = "txt3"><br><br>
+	<input type = "button" id  = "sum" name = "txt1" value = "Sum" onclick = "sum()"><br><br>
+	<input type = "button" id  = "prdt" name = "prdt" value = "Product" onclick = "product()"><br><br>
+	<input type = "button" id  = "diff" name = "diff" value = "Difference" onclick = "difference()"><br><br>
+	<input type = "button" id  = "qt" name = "qt" value = "Quotient" onclick = "quotient()"><br><br>
+</body>
+</html>
